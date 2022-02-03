@@ -37,7 +37,7 @@ mixin StreamInfo {
 /// Extension for Iterables of StreamInfo.
 extension StreamInfoIterableExt<T extends StreamInfo> on Iterable<T> {
   /// Gets the stream with highest bitrate.
-  T withHighestBitrate() => sortByBitrate().last;
+  T withHighestBitrate() => sortByBitrate().first;
 
   /// Gets the video streams sorted by bitrate in ascending order.
   /// This returns new list without editing the original list.
